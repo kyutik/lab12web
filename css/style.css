@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f7f5ed;
+  background-image: linear-gradient(rgb(255 255 255 / 89%), rgb(255 255 255 / 89%)),
+                    url("../image/poltava.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #202020;
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+}
+
+nav {
+  margin: 16px 5%;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 16px 8px 0;
+}
+
+p {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-indent: 2em;
+  text-align: justify;
+  font-style: italic;
+}
+
+h1 {
+  margin: 20px 5%;
+  color: #672526;
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h2, pre, dl {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+dd {
+  margin: 0 0 14px;
+}
+
+dd p {
+  margin: 4px 0;
+}
+
+section img {
+  display: block;
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+a:link {
+  color: #176038;
+}
+
+a:visited {
+  color: #593787;
+}
+
+a:active {
+  color: #b52424;
+}
