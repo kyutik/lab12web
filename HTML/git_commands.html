@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Команди Git</title>
+  <link rel="stylesheet" href="../css/lab12.css">
+</head>
+<body>
+  <header class="blog-header">
+    <div><a class="blog-name" href="PieshkoLab11-1.htm">Мій особистий блог</a><br>Владислав Пєшко</div>
+    <nav aria-label="Сторінки лабораторної">
+      <a href="git_commands.html">Команди Git</a>
+      <a href="register.html">Реєстрація</a>
+    </nav>
+  </header>
+  <main class="commands-page">
+    <h1>Команди Git</h1>
+      <div class="command-columns">
+        <div>
+          <section class="command-group">
+            <h2>Створення репозиторію</h2>
+            <dl>
+              <dt>Створити локальний репозиторій</dt>
+              <dd><code>git init [project name]</code></dd>
+              <dt>Клонувати наявний репозиторій</dt>
+              <dd><code>git clone my_url</code></dd>
+            </dl>
+          </section>
+          <section class="command-group">
+            <h2>Перегляд репозиторію</h2>
+            <dl>
+              <dt>Показати стан файлів</dt>
+              <dd><code>git status</code></dd>
+              <dt>Показати незбережені в індексі зміни</dt>
+              <dd><code>git diff</code></dd>
+              <dt>Показати зміни в індексі</dt>
+              <dd><code>git diff --cached</code></dd>
+              <dt>Показати зміни відносно останнього коміту</dt>
+              <dd><code>git diff HEAD</code></dd>
+              <dt>Порівняти два коміти</dt>
+              <dd><code>git diff commit1 commit2</code></dd>
+              <dt>Показати авторів і коміти для рядків файла</dt>
+              <dd><code>git blame [file]</code></dd>
+              <dt>Показати версію файла в коміті</dt>
+              <dd><code>git show [commit]:[file]</code></dd>
+              <dt>Показати історію комітів</dt>
+              <dd><code>git log</code></dd>
+              <dt>Показати історію шляху зі змінами</dt>
+              <dd><code>git log -p [file/directory]</code></dd>
+            </dl>
+          </section>
+        </div>
+        <div>
+          <section class="command-group">
+            <h2>Робота з гілками</h2>
+            <dl>
+              <dt>Показати локальні гілки</dt>
+              <dd><code>git branch</code></dd>
+              <dt>Показати локальні та віддалені гілки</dt>
+              <dd><code>git branch -av</code></dd>
+              <dt>Перейти на гілку</dt>
+              <dd><code>git checkout my_branch</code></dd>
+              <dt>Створити гілку</dt>
+              <dd><code>git branch new_branch</code></dd>
+              <dt>Видалити об’єднану локальну гілку</dt>
+              <dd><code>git branch -d my_branch</code></dd>
+              <dt>Перейти на гілку призначення</dt>
+              <dd><code>git checkout branch_b</code></dd>
+              <dt>Об’єднати branch_a з поточною гілкою</dt>
+              <dd><code>git merge branch_a</code></dd>
+              <dt>Позначити поточний коміт тегом</dt>
+              <dd><code>git tag my_tag</code></dd>
+            </dl>
+          </section>
+        </div>
+        <div>
+          <section class="command-group">
+            <h2>Внесення змін</h2>
+            <dl>
+              <dt>Додати файл до індексу</dt>
+              <dd><code>git add [file]</code></dd>
+              <dt>Додати зміни в поточній папці до індексу</dt>
+              <dd><code>git add .</code></dd>
+              <dt>Зафіксувати зміни з індексу</dt>
+              <dd><code>git commit -m &quot;commit message&quot;</code></dd>
+              <dt>Зафіксувати зміни відстежуваних файлів</dt>
+              <dd><code>git commit -am &quot;commit message&quot;</code></dd>
+              <dt>Прибрати файл з індексу, зберігши зміни</dt>
+              <dd><code>git reset [file]</code></dd>
+              <dt>Відкинути незакомічені зміни відстежуваних файлів</dt>
+              <dd><code>git reset --hard</code></dd>
+            </dl>
+          </section>
+        </div>
+        <div>
+          <section class="command-group">
+            <h2>Синхронізація</h2>
+            <dl>
+              <dt>Завантажити зміни без об’єднання</dt>
+              <dd><code>git fetch</code></dd>
+              <dt>Отримати й інтегрувати зміни</dt>
+              <dd><code>git pull</code></dd>
+              <dt>Отримати зміни та перенести свої коміти поверх них</dt>
+              <dd><code>git pull --rebase</code></dd>
+              <dt>Відправити коміти у віддалений репозиторій</dt>
+              <dd><code>git push</code></dd>
+            </dl>
+          </section>
+          <section class="command-group">
+            <h2>Довідка</h2>
+            <dl>
+              <dt>Відкрити довідку для команди</dt>
+              <dd><code>git command --help</code></dd>
+            </dl>
+          </section>
+        </div>
+      </div>
+  </main>
+  <footer class="blog-footer">Розробник — Владислав Пєшко</footer>
+</body>
+</html>
